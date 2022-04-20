@@ -251,10 +251,13 @@ def ones_spec(out):
     for i in range(len(out)):
         out[i] = 1
 
+    return out
+
 
 # +
 def ones(i: int) -> TT["i"]:
-    assert False, 'Not implemented yet.'
+    # assert False, 'Not implemented yet.'
+    return np.ones(shape= i)
 
 
 test_ones = make_test(ones, ones_spec, add_sizes=["i"])
